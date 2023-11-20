@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Keliling Trapesium</title>
+</head>
+
+<body style="background-color: rgb(241, 238, 203);">
+    <h1>Kalkulator Keliling Trapesium</h1>
+    <form id="trapezoidForm">
+        <label for="sideA">Masukkan Panjang Sisi A:</label>
+        <input type="number" id="sideA" name="sideA" required><br><br>
+        <label for="sideB">Masukkan Panjang Sisi B:</label>
+        <input type="number" id="sideB" name="sideB" required><br><br>
+        <label for="sideC">Masukkan Panjang Sisi C:</label>
+        <input type="number" id="sideC" name="sideC" required><br><br>
+        <label for="sideD">Masukkan Panjang Sisi D:</label>
+        <input type="number" id="sideD" name="sideD" required><br><br>
+        <button type="button" onclick="hitungKeliling()">Hitung Keliling</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function hitungKeliling() {
+            const sideA = parseFloat(document.getElementById('sideA').value);
+            const sideB = parseFloat(document.getElementById('sideB').value);
+            const sideC = parseFloat(document.getElementById('sideC').value);
+            const sideD = parseFloat(document.getElementById('sideD').value);
+
+            const keliling = sideA + sideB + sideC + sideD;
+
+            document.getElementById('result').innerText = `Keliling trapesium adalah: ${keliling}`;
+        }
+
+    </script>
+    <form action="index.html">
+        <button type="submit">BACK</button>
+    </form>
+</body>
+
+</html>

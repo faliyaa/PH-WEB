@@ -1,0 +1,1 @@
+alert('Hai semuanya! kenalin, nama aku Faliya!');

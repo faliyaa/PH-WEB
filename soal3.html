@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ubah Teks dan Warna</title>
+    <style>
+        #ubahTeks {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(241, 238, 203);">
+    <h1>Ubah Teks dan Warna</h1>
+    <p id="ubahTeks" onclick="ubahTeks()">Klik disini untuk mengubah teks, warna, dan background!</p>
+    <script>
+        let klikPertama = true;
+
+        function ubahTeks() {
+            const teksElement = document.getElementById('ubahTeks');
+
+            if (klikPertama) {
+                teksElement.innerHTML = 'Teks telah diubah!';
+                teksElement.style.color = 'white';
+                teksElement.style.backgroundColor = '#eeabb5';
+                klikPertama = false;
+            } else {
+                teksElement.innerHTML = 'Klik disini untuk mengubah teks, warna, dan background!';
+                teksElement.style.color = 'black';
+                teksElement.style.backgroundColor = 'lightgrey';
+                klikPertama = true;
+            }
+        }
+
+    </script>
+    <form action="index.html">
+        <button type="submit">BACK</button>
+    </form>
+</body>
+
+</html>

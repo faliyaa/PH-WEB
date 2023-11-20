@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SOAL 4</title>
+</head>
+
+<body style="background-color: rgb(241, 238, 203);">
+
+    <label for="jumlahPerulangan">Jumlah Perulangan:</label>
+    <input type="number" id="jumlahPerulangan" min="1" value="5">
+    <br>
+    <br>
+    <button onclick="tampilkanPerulangan()">Tampilkan</button>
+    <br>
+    <div id="output"></div>
+    <br>
+    <script>
+        function tampilkanPerulangan() {
+            // Mengambil nilai jumlah perulangan dari input
+            var jumlahPerulangan = document.getElementById('jumlahPerulangan').value;
+
+            // Membuat kalimat
+            var kalimat = "Hai! kenalin nama aku Adhara Faliya Utanti, salam kenal ya!";
+
+            // Membersihkan output sebelum menambahkan hasil perulangan baru
+            document.getElementById('output').innerHTML = '';
+
+            // Menampilkan kalimat sesuai jumlah perulangan
+            for (var i = 0; i < jumlahPerulangan; i++) {
+                document.getElementById('output').innerHTML += '<p>' + kalimat + '</p>';
+            }
+        }
+    </script>
+    <form action="index.html">
+        <button type="submit">BACK</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(241, 238, 203);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #eeabb5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+button:hover {
+    color: rgb(223, 144, 187);
+    background-color: white;
+    font-weight: 700;
+}
+
+h3 {
+    color: black;
+    font-size: 30px;
+}
